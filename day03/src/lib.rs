@@ -1,16 +1,5 @@
 use regex::Regex;
 
-// fn parse_input(input: &str) -> Vec<Vec<i32>> {
-//     input
-//         .lines()
-//         .map(|line| {
-//             line.split_whitespace()
-//                 .map(|n| n.parse::<i32>().unwrap())
-//                 .collect::<Vec<_>>()
-//         })
-//         .collect::<Vec<_>>()
-// }
-
 pub fn part1(input: &str) -> String {
     let re = Regex::new(r"mul\(\d{1,3},\d{1,3}\)").unwrap();
 
